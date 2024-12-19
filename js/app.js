@@ -38,7 +38,7 @@
 
 	//owlCarousel
 	$('.owl-carousel').owlCarousel({
-	    autoplay:true,
+	    autoplay:false,
 	    autoplayTimeout:3000,
 	    loop:true,
 	    margin:10,
@@ -99,5 +99,34 @@
 	        'overflow': 'visible'
 	    });
 	});
+
+	const form = document.getElementById('registrationForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                
+                const modalMessage = document.getElementById('modalMessage');
+                modalMessage.textContent = data.message;
+                
+                const responseModal = new bootstrap.Modal(document.getElementById('responseModal'));
+                responseModal.show();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                const modalMessage = document.getElementById('modalMessage');
+                modalMessage.textContent = 'An error occurred while submitting the form. Please try again.';
+                
+                const responseModal = new bootstrap.Modal(document.getElementById('responseModal'));
+                responseModal.show();
+            });
+        });
 	
 })(jQuery)

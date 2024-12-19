@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Webstar NYC </title>
+    <title>Webstar NYC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
     <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
@@ -88,7 +88,7 @@
                         <div class="text-center">
                             <h5 class="form-title mb-4">Have a project in mind?</h5>
                         </div>
-                        <form class="registration-form" action="https://script.google.com/macros/s/AKfycbyXaRJCjVJCq98_uhTqfb64yTWHWDY5NCE1td_31mCYGdt2-KrS7CTScEzTnwY6pH9m/exec" method="post">
+                        <form class="registration-form" id="registrationForm" action="https://script.google.com/macros/s/AKfycbyXaRJCjVJCq98_uhTqfb64yTWHWDY5NCE1td_31mCYGdt2-KrS7CTScEzTnwY6pH9m/exec" method="post">
                             <div class="form-group mb-4">
                                 <label for="name" class="f-15 mb-2">Your Name*</label>
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
@@ -110,13 +110,33 @@
                                 <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Provide project details"></textarea>
                             </div>                                                                                    
                             <button type="submit" class="btn btn-primary w-100 btn-sm">Get Started <i class="mdi mdi-telegram ms-2"></i></button>
-                        </form>                    
+                        </form>                   
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Hero End -->
+
+
+    <!-- Pop desing form successfully -->
+    <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="responseModalLabel">Thank you</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalMessage">
+                    <!-- The response message will be displayed here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- pop desing end here -->
 
     <section class="pt-5">
         <div class="container">
