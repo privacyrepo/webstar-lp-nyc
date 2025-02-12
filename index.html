@@ -3,13 +3,34 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Webstar NYC</title>
+    <title>Webstar NYC - Professional Web Development & Digital Marketing Services in Manhattan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
-    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
-    <meta content="Themesdesign" name="author" />
+    <meta name="description" content="NYC's trusted web development agency offering affordable website design, app development, and digital marketing services. Expert team from Columbia University and McKinsey." />
+    <meta name="keywords" content="web development nyc, website design manhattan, affordable web design nyc, digital marketing agency nyc, app development new york, ecommerce website development, seo services manhattan" />
+    <meta name="author" content="Webstar NYC" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webstarweb.com/" />
+    <meta property="og:title" content="Webstar NYC - Professional Web Development Services" />
+    <meta property="og:description" content="NYC's trusted web development agency offering affordable website design, app development, and digital marketing services." />
+    <meta property="og:image" content="images/new-logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://webstarweb.com/" />
+    <meta property="twitter:title" content="Webstar NYC - Professional Web Development Services" />
+    <meta property="twitter:description" content="NYC's trusted web development agency offering affordable website design, app development, and digital marketing services." />
+    <meta property="twitter:image" content="images/new-logo.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://webstarweb.com/" />
+
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
     <!--Slider-->
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -135,38 +156,88 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="text-dark hero-4-title fw-light mb-4">Websites for Manhattan businesses, <span class="fw-medium">just not at Manhattan prices</span></h1>
-                    <p class="text-muted">Award-winning experts to support your business's growth online. Whether you need a new website, maintenance, or digital marketing, we provide flexible solutions tailored to your needs and budget.</p>
-                    <button class="btn btn-primary mt-4">Learn More <span class="ms-2 right-icon">&#8594;</span></button>
+                    <h1 class="text-dark hero-4-title fw-light mb-3">Get a Professional Website in 14 Days or Less</h1>
+                    <h2 class="text-primary fw-medium mb-4">Starting at Just $699</h2>
+                    
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                            <i class="mdi mdi-check-circle text-primary me-2"></i>
+                            <strong>Free Consultation</strong> - Get Expert Advice & Custom Quote
+                        </li>
+                        <li class="mb-2">
+                            <i class="mdi mdi-check-circle text-primary me-2"></i>
+                            <strong>100% Satisfaction</strong> - Or Your Money Back
+                        </li>
+                        <li class="mb-2">
+                            <i class="mdi mdi-check-circle text-primary me-2"></i>
+                            <strong>NYC-Based Team</strong> - Columbia & McKinsey Alumni
+                        </li>
+                    </ul>
+
+                    <p class="text-muted mb-4">
+                        <i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star text-warning"></i>
+                        <i class="mdi mdi-star text-warning"></i>
+                        <span class="ms-2">5.0/5.0 from 200+ Happy Clients</span>
+                    </p>
                 </div>
-                <div class="col-lg-4 offset-lg-2">
-                    <div class="hero-login-form mx-auto p-4 rounded mt-5 mt-lg-0">
-                        <div class="text-center">
-                            <h5 class="form-title mb-4">Have a project in mind?</h5>
+
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="hero-login-form mx-auto p-4 rounded mt-5 mt-lg-0 bg-white shadow">
+                        <div class="text-center mb-4">
+                            <h4 class="form-title mb-2">Get Your Free Quote Today</h4>
+                            <p class="text-muted">Limited Time Offer: 20% Off Your First Project</p>
                         </div>
                         <form class="registration-form" id="registrationForm" action="https://script.google.com/macros/s/AKfycbyXaRJCjVJCq98_uhTqfb64yTWHWDY5NCE1td_31mCYGdt2-KrS7CTScEzTnwY6pH9m/exec" method="post">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name*" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email*" required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your Phone (Optional)">
+                            </div>
+                            <div class="form-group mb-3">
+                                <select class="form-control" id="budget" name="estimated-budget" required>
+                                    <option value="">Select Your Budget Range*</option>
+                                    <option value="699">Basic Website ($699-1499)</option>
+                                    <option value="1499">Standard Website ($1,499-2,999)</option>
+                                    <option value="2999">Advanced Website ($2,999+)</option>
+                                </select>
+                            </div>
                             <div class="form-group mb-4">
-                                <label for="name" class="f-15 mb-2">Your Name*</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                                <textarea class="form-control" id="comment" name="comment" rows="2" placeholder="Brief Project Description (Optional)"></textarea>
                             </div>
-                            <div class="form-group mb-4">
-                                <label for="email" class="f-15 mb-2">Your Work Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="phone" class="f-15 mb-2">Your Phone Number (optional)</label>
-                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="estimatedBudget" class="f-15 mb-2">Estimated Budget</label>
-                                <input type="number" class="form-control" id="estimatedBudget" name="extimated-budget" placeholder="Enter estimated budget" required>
-                            </div>
-                            <div class="form-group mb-3">
-                                <label for="projectDetails" class="f-15 mb-2">Project Details (optional)</label>
-                                <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Provide project details"></textarea>
-                            </div>                                                                                    
-                            <button type="submit" class="btn btn-primary w-100 btn-sm">Get Started <i class="mdi mdi-telegram ms-2"></i></button>
-                        </form>                   
+                            <button type="submit" class="btn btn-primary w-100 btn-lg">
+                                Get My Free Quote <i class="mdi mdi-arrow-right ms-2"></i>
+                            </button>
+                            <p class="text-muted text-center small mt-2">
+                                <i class="mdi mdi-lock-outline me-1"></i>
+                                Your information is secure and confidential
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center flex-wrap">
+                        <div class="mx-4 mb-3 text-center">
+                            <img src="images/badges/check.png" alt="Google 5-Star" height="50" class="mb-2">
+                            <p class="small text-muted mb-0">Google Verified</p>
+                        </div>
+                        <div class="mx-4 mb-3 text-center">
+                            <img src="images/badges/bbb.png" alt="BBB A+" height="50" class="mb-2">
+                            <p class="small text-muted mb-0">BBB A+ Rated</p>
+                        </div>
+                        <div class="mx-4 mb-3 text-center">
+                            <img src="images/badges/shield.png" alt="Secure" height="50" class="mb-2">
+                            <p class="small text-muted mb-0">SSL Secured</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -976,6 +1047,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     .team-box ul li {
         padding-left: 25px;
+    }
+}
+
+.hero-4-bg {
+    padding: 120px 0 80px;
+    background-color: #f8f9fa !important;
+}
+
+.hero-login-form {
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.hero-login-form:hover {
+    transform: translateY(-5px);
+}
+
+.form-control {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.btn-lg {
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+/* Add mobile optimization */
+@media (max-width: 768px) {
+    .hero-4-bg {
+        padding: 100px 0 40px;
+    }
+    
+    .hero-4-title {
+        font-size: 28px;
+    }
+    
+    .hero-login-form {
+        margin: 20px 15px;
     }
 }
 </style>
