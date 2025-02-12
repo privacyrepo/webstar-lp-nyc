@@ -76,6 +76,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </div>
 
+    <!-- Add this right after the opening <body> tag, after the preloader div -->
+    <div id="imageModal" class="modal image-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
     <!--Navbar Start-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark navbar-light">
         <div class="container">
@@ -83,6 +89,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <a class="navbar-brand logo" href="layout-one-1.html">
                 <img src="images/new-logo.png" alt="" class="" height="30">
             </a>
+            <!-- Add phone number here -->
+            <div class="d-none d-lg-block me-auto ms-4">
+                <a href="tel:3474438778" class="text-dark text-decoration-none">
+                    <i class="mdi mdi-phone me-2"></i>(347) 443-8778
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="mdi mdi-menu"></i>
             </button>
@@ -105,6 +117,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                 </ul>
             </div>
@@ -197,6 +212,185 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </section>
+
+    <!-- Add this section before the Portfolio section -->
+    <section class="section bg-light" id="team">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="text-center mb-5">
+                        <h4 class="text-uppercase mb-0">Our Core Team</h4>
+                        <div class="my-3">
+                            <img src="images/title-border.png" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                        <p class="text-muted f-14">Meet the experts behind our success</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="team-box p-4 bg-white rounded shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center">
+                                <div class="team-img mb-4 mb-md-0">
+                                    <img src="images/team/tony.jpg" alt="Tony Tsui" class="img-fluid rounded-circle" style="width: 160px; height: 160px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="font-weight-bold mb-3">Tony Tsui</h5>
+                                <ul class="list-unstyled text-muted">
+                                    <li class="mb-2"><i class="mdi mdi-check-circle text-primary me-2"></i>Columbia University CS Master's graduate with a focus in Artificial Intelligence</li>
+                                    <li class="mb-2"><i class="mdi mdi-check-circle text-primary me-2"></i>10+ years of experience in full stack web & app design</li>
+                                    <li class="mb-2"><i class="mdi mdi-check-circle text-primary me-2"></i>National Physics Olympiad Winner</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="team-box p-4 bg-white rounded shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center">
+                                <div class="team-img mb-4 mb-md-0">
+                                    <img src="images/team/jing.jpg" alt="Jing Piao" class="img-fluid rounded-circle" style="width: 160px; height: 160px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="font-weight-bold mb-3">Jing Piao</h5>
+                                <ul class="list-unstyled text-muted">
+                                    <li class="mb-2"><i class="mdi mdi-check-circle text-primary me-2"></i>Former Business Strategy Consultant at McKinsey</li>
+                                    <li class="mb-2"><i class="mdi mdi-check-circle text-primary me-2"></i>Led digital marketing initiatives for Fortune 500 companies</li>
+                                    <li class="mb-2"><i class="mdi mdi-check-circle text-primary me-2"></i>Managed a ~$3B residential real estate rental portfolio</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Start -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="text-center mb-5">
+                        <h4 class="text-uppercase mb-0">Our Portfolio</h4>
+                        <div class="my-3">
+                            <img src="images/title-border.png" alt="" class="img-fluid mx-auto d-block">
+                        </div>
+                        <p class="text-muted f-14">Check out some of our recent landing page designs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/1.png" alt="Landing Page 1" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Residential Construction</h5>
+                            <p class="card-text text-muted">Custom home builder website with project gallery</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/2.png" alt="Landing Page 2" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Commercial Construction</h5>
+                            <p class="card-text text-muted">Office building and retail construction specialist</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/3.png" alt="Landing Page 3" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Renovation Services</h5>
+                            <p class="card-text text-muted">Home remodeling and renovation contractor</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/4.png" alt="Landing Page 4" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Industrial Construction</h5>
+                            <p class="card-text text-muted">Factory and warehouse construction projects</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/5.png" alt="Landing Page 5" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Interior Design</h5>
+                            <p class="card-text text-muted">Luxury interior design and renovation services</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/6.png" alt="Landing Page 6" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Architectural Services</h5>
+                            <p class="card-text text-muted">Modern architectural design and planning</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/7.png" alt="Landing Page 7" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Building</h5>
+                            <p class="card-text text-muted">Sustainable construction and LEED certification</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/8.png" alt="Landing Page 8" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Construction Management</h5>
+                            <p class="card-text text-muted">Full-service construction project management</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/9.png" alt="Landing Page 9" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Historic Restoration</h5>
+                            <p class="card-text text-muted">Historical building preservation and restoration</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="portfolio-box card h-100">
+                        <img src="images/projects/10.png" alt="Landing Page 10" class="img-fluid w-100">
+                        <div class="card-body">
+                            <h5 class="card-title">General Contracting</h5>
+                            <p class="card-text text-muted">Full-service general contractor and builder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio End -->
 
     <!-- Service Start -->
     <section class="section" id="services">
@@ -365,42 +559,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="col-lg-4">
                     <div class="pricing-box rounded text-center position-relative px-4 py-5 mb-4">
                         <img src="images/pricing/img-1.png" alt="" class="img-fluid mx-auto d-block">
-                        <h3 class="pricing-title title text-uppercase mt-5 mb-4">Basic</h3>
+                        <h3 class="pricing-title title text-uppercase mt-5 mb-4">Basic Website</h3>
                         <div class="text-muted py-3">
-                            <p class="">Ideal for quick one-pager sign-up</p>
-                            <p class="">Mobile friendly</p>
-                            <p class="">Slider with a photo</p>
+                            <p class="">Up to 5 pages</p>
+                            <p class="">Mobile-friendly design</p>
+                            <p class="">Basic SEO optimization</p>
+                            <p class="">Quick turnaround time</p>
                         </div>
-                        <p class="text-muted f-15 mb-4">Section with "About", "Contact", and footer<span class="d-block f-18"><b>$199</b></span></p>
+                        <p class="text-muted f-15 mb-4">Perfect for small businesses & startups<span class="d-block f-18"><b>Starting at $699</b></span></p>
                         <a href="#home" class="btn btn-outline-primary">Get Started<span class="ms-2 right-icon">&#8594;</span></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="pricing-box rounded text-center position-relative active px-4 py-5 mb-4">
                         <div class="ribbon">
-                            <p class="mb-0 text-white f-13"></p>
+                            <p class="mb-0 text-white f-13">Popular</p>
                         </div>
                         <img src="images/pricing/img-2.png" alt="" class="img-fluid mx-auto d-block">
-                        <h3 class="pricing-title title text-uppercase mt-5 mb-4">Standard</h3>
+                        <h3 class="pricing-title title text-uppercase mt-5 mb-4">Standard Website</h3>
                         <div class="text-muted py-3">
-                            <p class="">Suitable for local business for online presentation:</p>
-                            <p class="">All from the basic package</p>
-                            <p class="">4-6 pages with sections like "Services"</p>
+                            <p class="">5-15 custom pages</p>
+                            <p class="">Custom design & branding</p>
+                            <p class="">Enhanced SEO features</p>
+                            <p class="">Contact forms & booking systems</p>
                         </div>
-                        <p class="text-muted f-15 mb-4">Gallery with photo from clients' projects<span class="d-block f-18"><b>$699</b></span></p>
+                        <p class="text-muted f-15 mb-4">Ideal for growing businesses<span class="d-block f-18"><b>Starting at $1,499</b></span></p>
                         <a href="#home" class="btn btn-primary">Get Started <span class="ms-2 right-icon">&#8594;</span></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="pricing-box rounded text-center position-relative px-4 py-5 mb-4">
                         <img src="images/pricing/img-3.png" alt="" class="img-fluid mx-auto d-block">
-                        <h3 class="pricing-title title text-uppercase mt-5 mb-4">PROFESSIONAL</h3>
+                        <h3 class="pricing-title title text-uppercase mt-5 mb-4">Advanced Website</h3>
                         <div class="text-muted py-3">
-                            <p class="">All from the standard package</p>
-                            <p class="">Customized design to build brand image</p>
-                            <p class="">Advanced ordering and payment system </p>
+                            <p class="">15+ custom pages</p>
+                            <p class="">Custom UX/UI design</p>
+                            <p class="">Advanced integrations</p>
+                            <p class="">E-commerce & automation</p>
                         </div>
-                        <p class="text-muted f-15 mb-4">Customized features as requested <span class="d-block f-18"><b>$1,199+</b></span></p>
+                        <p class="text-muted f-15 mb-4">Built for scalability & growth<span class="d-block f-18"><b>Starting at $2,999</b></span></p>
                         <a href="#home" class="btn btn-outline-primary">Get Started <span class="ms-2 right-icon">&#8594;</span></a>
                     </div>
                 </div>
@@ -462,7 +659,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="item">
                         <div class="testi-content text-center m-3 p-4 position-relative">
                             <div class="testi-icon"><i class="mdi mdi-format-quote-open"></i></div>
-                            <p class="text-muted mb-4 position-relative f-15">Webstar built my startup MVP with a user-centric approach. We rigorously tested it with initial users. It’s been incredibly productive and effective.</p>
+                            <p class="text-muted mb-4 position-relative f-15">Webstar built my startup MVP with a user-centric approach. We rigorously tested it with initial users. It's been incredibly productive and effective.</p>
                             <img src="images/LP_84.png" alt="" class="img-fluid mx-auto d-block rounded-circle user-img">
                             <h5 class="title mb-1 mt-4">Ashwin Gupta </h5>
                             <p class="text-muted mb-2 f-15">AI startup founder</p>
@@ -596,6 +793,237 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSDT5RG2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<style>
+.portfolio-box {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.portfolio-box:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-box img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Fix mobile navigation */
+@media (max-width: 991.98px) {
+    .navbar-custom {
+        padding: 10px 0;
+    }
+    
+    .navbar-custom .navbar-collapse {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+    
+    .navbar-custom .navbar-nav .nav-link {
+        padding: 10px 20px;
+        color: #333;
+    }
+    
+    .navbar-custom .navbar-toggler {
+        border: none;
+        padding: 0;
+    }
+    
+    .navbar-custom .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+/* Image modal styles */
+.portfolio-box img {
+    cursor: pointer;
+}
+
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close-modal {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* Phone number styles */
+.navbar-custom .mdi-phone {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+/* Show phone number in mobile menu */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        position: relative;
+    }
+    
+    .navbar-nav::before {
+        content: "(347) 443-8778";
+        display: block;
+        padding: 10px 20px;
+        color: #333;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    
+    .navbar-nav::after {
+        font-family: "Material Design Icons";
+        content: "\F03F2";
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 20px;
+        color: #333;
+    }
+}
+
+.team-box {
+    transition: transform 0.3s ease;
+}
+
+.team-box:hover {
+    transform: translateY(-5px);
+}
+
+.team-img img {
+    border: 4px solid #f8f9fa;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.team-box ul li {
+    position: relative;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.team-box ul li i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    font-size: 16px;
+}
+
+.team-box ul {
+    margin-bottom: 0;
+}
+
+.team-box ul li {
+    text-align: left;
+    white-space: normal;
+    max-width: 100%;
+}
+
+@media (max-width: 767px) {
+    .team-box {
+        text-align: center;
+    }
+    
+    .team-box ul {
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .team-box ul li {
+        padding-left: 25px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Close mobile menu when clicking a nav link
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth < 992) {
+                navbarCollapse.classList.remove('show');
+            }
+        });
+    });
+});
+
+// Image modal functionality
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImage');
+const closeBtn = document.getElementsByClassName('close-modal')[0];
+
+// Add click event to all portfolio images
+document.querySelectorAll('.portfolio-box img').forEach(img => {
+    img.onclick = function() {
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+    }
+});
+
+// Close modal when clicking the × button
+closeBtn.onclick = function() {
+    modal.style.display = 'none';
+}
+
+// Close modal when clicking outside the image
+modal.onclick = function(event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// Close modal with escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && modal.style.display === 'block') {
+        modal.style.display = 'none';
+    }
+});
+</script>
 
 </body>
 </html>
