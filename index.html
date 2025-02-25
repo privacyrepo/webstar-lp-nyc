@@ -1218,9 +1218,7 @@ closeBtn.onclick = function() {
 
 // Close modal when clicking outside the image
 modal.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
+    modal.style.display = 'none';
 }
 
 // Close modal with escape key
@@ -1229,6 +1227,11 @@ document.addEventListener('keydown', function(event) {
         modal.style.display = 'none';
     }
 });
+
+// Also add click handler directly to the modal image
+modalImg.onclick = function() {
+    modal.style.display = 'none';
+}
 
 // Initialize portfolio carousel
 $(document).ready(function(){
